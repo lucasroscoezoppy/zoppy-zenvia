@@ -22,7 +22,6 @@ import { MessageTemplateEntitiesResponse } from '@ZoppyTech/shared';
 export class ZenviaSmsHelper {
     public static async send(request: ZenviaSmsRequest): Promise<string> {
         const messageCount: number = Math.ceil(request.text.length / 160);
-
         if (messageCount > 1) return null;
 
         await Message.create({
