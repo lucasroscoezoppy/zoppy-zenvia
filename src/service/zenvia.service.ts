@@ -9,17 +9,18 @@ export class ZenviaService {
     };
 
     public static async post(body: any): Promise<AxiosResponse> {
+        const response: AxiosResponse = await axios.post(this.URL, body, {
+            headers: this.HEADERS
+        });
+
         await LogService.info({
             message: {
                 message: `Post Zenvia API`,
                 url: this.URL,
                 body: JSON.stringify(body),
-                headers: this.HEADERS
+                headers: this.HEADERS,
+                response: JSON.stringify(response.data)
             }
-        });
-
-        const response: AxiosResponse = await axios.post(this.URL, body, {
-            headers: this.HEADERS
         });
 
         return response;
