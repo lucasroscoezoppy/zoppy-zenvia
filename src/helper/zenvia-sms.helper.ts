@@ -34,6 +34,8 @@ export class ZenviaSmsHelper {
             alertId: request.alertId
         });
 
+        request.text = StringUtil.replaceAll(request.text, '$', 'S');
+
         const body: any = {
             from: 'sms-account',
             to: WhatsappUtil.getFullPhone(request.phone),

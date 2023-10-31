@@ -51,7 +51,7 @@
     "peerDependencies": {
         "axios": "^0.27.2",
         "uuid": "^8.3.2",
-        "@ZoppyTech/utilities": "~2.1.6",
+        "@ZoppyTech/utilities": "~2.1.7",
         "@ZoppyTech/models": "~4.3.1",
         "@ZoppyTech/shared": "~3.0.1"
     },
