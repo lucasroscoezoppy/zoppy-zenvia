@@ -1,6 +1,6 @@
 {
     "name": "@ZoppyTech/zenvia",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Zoppy Zenvia",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
